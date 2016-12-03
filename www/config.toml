@@ -1,0 +1,22 @@
+languageCode = "en-us"
+title = "Devops Week News"
+baseurl = "http://devopsweeknews.github.io/"
+theme = "ghostwriter"
+
+[Params]
+    intro = true
+    headline = "Devops Week News"
+    description = "Weekly newsletter with curated articles about DevOps."
+    github = "https://github.com/orgs/devopsweeknews"
+    twitter = "https://twitter.com/devopsweeknews"
+    opengraph = true
+
+[[menu.main]]
+    name = "Issues"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "Subscribe"
+    url = "/subscribe/"
+    weight = 2
