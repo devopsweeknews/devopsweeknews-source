@@ -1,6 +1,7 @@
-languageCode = "en-us"
 title = "Devops Week News"
-baseurl = "http://devopsweeknews.github.io/"
+baseurl = "http://devopsweeknews.com/"
+languageCode = "en-us"
+copyright = "DevOps Week News 2018"
 theme = "ghostwriter"
 
 [Params]
