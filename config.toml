@@ -10,6 +10,7 @@ theme = "ghostwriter"
     description = "Weekly newsletter with curated articles about DevOps."
     github = "https://github.com/orgs/devopsweeknews"
     twitter = "https://twitter.com/devopsweeknews"
+    shareTwitter = true
     opengraph = true
 
 [[menu.main]]

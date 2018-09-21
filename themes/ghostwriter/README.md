@@ -6,11 +6,32 @@ Enhanced port of the Ghost "[ghostwriter](https://github.com/roryg/ghostwriter)"
 
 Inside the folder of your Hugo site run:
 
-    $ mkdir themes
-    $ cd themes
-    $ git clone https://github.com/jbub/ghostwriter
+```bash
+$ mkdir themes
+$ cd themes
+$ git clone https://github.com/jbub/ghostwriter
+```
 
 For more information read the official [setup guide](//gohugo.io/overview/installing/) of Hugo.
+
+## Development
+
+After installing the theme you need to install javascript dependencies. You can use 
+`npm` or `yarn` to install them from `package.json`. We are using `webpack` to build
+and package styles. In order to develop with realtime reloading in the browser you can 
+use this powerful combo:
+
+```bash
+hugo server
+yarn run watch
+```
+
+To update theme styles edit the `styles/style.scss` file. You can then either use the `watch` command
+or run `build` to compile the styles:
+
+```bash
+yarn run build
+```
 
 ## Example config.toml
 
@@ -24,6 +45,16 @@ languageCode = "en-us"
 copyright = "My Name"
 googleAnalytics = "XXX"
 disqusShortname = "XXX"
+
+[Privacy]
+
+[Privacy.disqus]
+    disable = true
+
+[Privacy.googleAnalytics]
+    anonymizeIP = true
+    respectDoNotTrack = true
+    useSessionStorage = false
 
 [Author]
     name = "My Name"
@@ -42,7 +73,19 @@ disqusShortname = "XXX"
     gplus = "https://google.com/+XXX"
     twitter = "https://twitter.com/XXX"
     stackoverflow = "https://stackoverflow.com/users/XXX/YYY"
+    email = "XXX@example.com"
     opengraph = true
+    shareTwitter = true
+    shareFacebook = true
+    shareGooglePlus = true
+    shareLinkedIn = false
+    dateFormat = "Mon, Jan 2, 2006"
+    highlightJsUrl = ""
+    highlightJsLocalUrl = ""
+    exponeaJsUrl = ""
+    exponeaTarget = ""
+    exponeaToken = ""
+    exponeaTrackVisits = false
 
 [Permalinks]
     post = "/:year/:month/:day/:filename/"
@@ -67,3 +110,6 @@ disqusShortname = "XXX"
     url = "/page/about/"
     weight = 4
 ```
+
+You can also inject arbitrary HTML into `<head>` simply by overriding the `extra-in-head.html`
+partial, which is meant for that purpose.
