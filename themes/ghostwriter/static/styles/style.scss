@@ -2,9 +2,9 @@
 // ============================================================ //
 // ============================================================ //
 
-$primary: #F03838;
+$primary: #0098ff;
 $secondary: #303030;
-$background: #FEFEFE;
+$background: #ffffff;
 
 /* ============================================================ */
 /* Base */
@@ -768,4 +768,33 @@ table {
     }
 
     .footer-copyright { padding: 0 10px; }
+}
+
+/* ============================================================ */
+/* Subscribe form */
+/* ============================================================ */
+
+.revue-form-group {
+    background-color: #ffffff;
+    margin: 0;
+    position: relative;
+
+    label {
+        font-weight: bold;
+    }
+
+    input {
+        display: block;
+        margin: 0;
+        padding: 10px;
+        background: #fff;
+        width: 97%;
+        border: 2px solid #d0d0d0 !important;
+        border-radius: 5px;
+        -webkit-appearance: none;
+    }
+
+    p {
+        text-align: justify;
+    }
 }
