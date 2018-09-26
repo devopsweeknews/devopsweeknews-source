@@ -17,8 +17,3 @@ theme = "ghostwriter"
     name = "Issues"
     url = "/"
     weight = 1
-
-[[menu.main]]
-    name = "Subscribe"
-    url = "/subscribe/"
-    weight = 2
