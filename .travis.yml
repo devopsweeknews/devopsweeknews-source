@@ -1,11 +1,12 @@
 language: go
-
+dist: trusty
 go:
   - master
 
 # Install the apt prerequisites
 addons:
   apt:
+    update: true
     packages:
       - hugo
 
