@@ -1,17 +1,13 @@
 language: go
+sudo: true
 dist: trusty
-go:
-  - master
 
-# Install the apt prerequisites
-addons:
-  apt:
-    update: true
-    packages:
-      - hugo
+install:
+  - sudo apt-get --yes install snapd
+  - sudo snap install hugo
 
 script:
-  - hugo
+  - /snap/bin/hugo
 
 deploy:
   local_dir: public
