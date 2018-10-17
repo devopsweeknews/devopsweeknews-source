@@ -1,0 +1,25 @@
+language: go
+
+go:
+  - master
+
+# Install the apt prerequisites
+addons:
+  apt:
+    packages:
+      - hugo
+
+script:
+  - hugo
+
+deploy:
+  local_dir: public
+  repo: devopsweeknews/devopsweeknews.github.io
+  target_branch: master
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  email: devopsweeknews@gmail.com
+  name: Travis-CI bot
+  on:
+    branch: master
