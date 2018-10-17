@@ -3,6 +3,7 @@ baseurl = "http://devopsweeknews.com/"
 languageCode = "en-us"
 copyright = "DevOps Week News 2018"
 theme = "ghostwriter"
+googleAnalytics = "UA-127649148-1"
 
 [Params]
     intro = true
