@@ -1,5 +1,5 @@
 title = "Devops Week News"
-baseurl = "http://devopsweeknews.com/"
+baseurl = "https://devopsweeknews.com/"
 languageCode = "en-us"
 copyright = "DevOps Week News 2018"
 theme = "ghostwriter"
@@ -9,7 +9,7 @@ googleAnalytics = "UA-127649148-1"
     intro = true
     headline = "Devops Week News"
     description = "Weekly newsletter with curated articles about DevOps."
-    github = "https://github.com/orgs/devopsweeknews"
+    github = "https://github.com/devopsweeknews"
     twitter = "https://twitter.com/devopsweeknews"
     shareTwitter = true
     opengraph = true
